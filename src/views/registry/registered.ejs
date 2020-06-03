@@ -1,0 +1,27 @@
+<% include ../template/head %>
+
+<div class="container">
+
+  <div class="row p-5">
+    <!-- ITEMS -->
+    <% for(var i = 0; i < registered.length; i++) { %>
+      <div class="col-md-4">
+        <div class="p-4">
+          <div class="card">
+            <img src="<%= registered[i].avatar %>" class="card-img-top">
+            <div class="card-body">
+              <h3 class="card-title"><%= `@${registered[i].username}` %></h3>
+              <p class="card-text"><%= registered[i].name %></p>
+              <p class="card-text"><%= registered[i].email %></p>
+              <p class="card-text"><%= registered[i].birthday.toDateString() %></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    <% } %>
+  </div>
+
+</div>
+
+
+<% include ../template/footer %>

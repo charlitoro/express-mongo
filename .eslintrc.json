@@ -1,0 +1,23 @@
+{
+    "env": {
+        "commonjs": true,
+        "es6": true,
+        "node": true
+    },
+    "globals": {
+        "Atomics": "readonly",
+        "SharedArrayBuffer": "readonly"
+    },
+    "parserOptions": {
+        "ecmaVersion": 11,
+        "sourceType": "module"
+    },
+    "rules": {
+        "indent": ["error", 4],
+        "quotes": ["error", "single", "backtick"],
+        "semi": ["error", "always"],
+        "no-console": [0],
+        "no-restricted-imports": ["error", ["import1", "import2"]],
+        "require-await": "warn"
+    }
+}

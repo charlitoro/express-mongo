@@ -1,0 +1,23 @@
+{
+  "name": "express-mongo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/"
+  },
+  "author": "CharliToro",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "dotenv": "^8.2.0",
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "faker": "^4.1.0",
+    "mongoose": "^4.13.3"
+  },
+  "devDependencies": {
+    "eslint": "^7.1.0",
+    "nodemon": "^1.12.1"
+  }
+}
